@@ -1,7 +1,6 @@
 
 import java.util.Calendar;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class User {
