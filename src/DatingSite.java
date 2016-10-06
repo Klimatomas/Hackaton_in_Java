@@ -15,11 +15,10 @@ class DatingSite {
             } catch (NumberFormatException e) {
                 System.out.println("You must enter a number!");
             }
-        }
-        while (true);
+        } while (true);
 
         if (!User.checkAge(year)) {
-            System.out.println("You must be over  18 to visit this website!");
+            System.out.println("You must be over 18 to visit this website!");
             return;
         }
 
