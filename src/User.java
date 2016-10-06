@@ -2,14 +2,14 @@ import java.util.Calendar;
 
 class User {
     private int year;
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
     private String nickname;
 
-    User(int year, String firstname, String lastname) {
+    User(int year, String firstName, String lastName) {
         this.year = year;
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.nickname = makeUsername();
     }
 
@@ -20,12 +20,11 @@ class User {
     }
 
     private String makeUsername() {
-        System.out.printf("%s%s\n", firstname.substring(0, 2), lastname.substring(0, 2));
-        nickname = firstname.substring(0, 2) + lastname.substring(0, 2);
-        return nickname;
+        System.out.printf("%s%s\n", firstName.substring(0, 2), lastName.substring(0, 2));
+        return firstName.substring(0, 2) + lastName.substring(0, 2);
     }
 
     void printUser() {
-        System.out.printf("Welcome! Here are your credentials:\nFirst Name: %s\nLast Name: %s\nNickname: %s\nYear of Birth: %s", firstname, lastname, nickname, year);
+        System.out.printf("Welcome! Here are your credentials:\nFirst Name: %s\nLast Name: %s\nNickname: %s\nYear of Birth: %s", firstName, lastName, nickname, year);
     }
 }
